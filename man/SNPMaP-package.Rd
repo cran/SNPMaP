@@ -2,7 +2,7 @@
 \alias{SNPMaP-package}
 \docType{package}
 \title{
-SNP Microarrays and Pooling in \R
+SNP Microarrays and Pooling in R
 }
 \description{
  Pooling DNA on SNP microarrays is a cost-effective way to carry out genome-wide association studies
@@ -13,8 +13,8 @@ SNP Microarrays and Pooling in \R
 \tabular{ll}{
 Package: \tab SNPMaP\cr
 Type: \tab Package\cr
-Version: \tab 1.0.2\cr
-Date: \tab 2008-06-24\cr
+Version: \tab 1.1.1\cr
+Date: \tab 2011-11-11\cr
 License: \tab GPL (>= 3)\cr
 }
  A SNPMaP study involves selecting individuals based on their disease status (case or control) or their
@@ -28,24 +28,20 @@ License: \tab GPL (>= 3)\cr
  provides methods for visualising the data at each stage of the analysis. Using the \code{lowMemory}
  option allows this to be done on a standard desktop computer (albeit slower than if all data is kept
  in memory). This package is an evolution of the scripts referred to in Meaburn et al (2006) and is described
- in Davis, Plomin and Schalkwyk (submitted for publication); please cite this paper if you find the package useful.
+ in Davis, Plomin and Schalkwyk (2009); please cite this paper if you find the package useful.
  Additional supporting material is available at \url{http://sgdp.iop.kcl.ac.uk/snpmap/}.
 }
 \section{Array types}{
 Details of the arrays supported by the current version of \code{SNPMaP} can be found in the \code{\link[SNPMaP.cdm:SNPMaP.cdm-package]{SNPMaP.cdm}} package.
 }
-\section{Future work}{
- Future releases of the package will build on the range of chips covered as well as introducing pre-packaged
- methods for carrying out the genome-wide screen for association.
-}
 \author{
 Oliver SP Davis and Leo C Schalkwyk
 
-Maintainer: Oliver SP Davis \email{snpmap@iop.kcl.ac.uk}
+Maintainer: SNPMaP team \email{snpmap@iop.kcl.ac.uk}
 }
 \references{
-Davis, OSP, Plomin, R, and Schalkwyk, LC. (submitted for publication) The SNPMaP package for R:
-A framework for genome-wide association using DNA pooling on microarrays.\cr
+Davis, OSP, Plomin, R, and Schalkwyk, LC. (2009) The SNPMaP package for R:
+A framework for genome-wide association using DNA pooling on microarrays. \emph{Bioinformatics, 25,} 281-283. \url{http://dx.doi.org/10.1093/bioinformatics/btn587}\cr
 \cr
 Meaburn E, Butcher LM, Schalkwyk LC, and Plomin R. (2006) Genotyping pooled DNA using 100K SNP microarrays:
 a step towards genomewide association scans. \emph{Nucleic Acids Research, 34(4):e28}. \url{http://dx.doi.org/10.1093/nar/gnj027}

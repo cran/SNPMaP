@@ -1,0 +1,15 @@
+citHeader("To cite the SNPMaP package in publications use:")
+
+citEntry(entry="Article",
+  author =personList(as.person("Oliver S. P. Davis"),
+		     as.person("Robert Plomin"), 
+                     as.person("Leo C. Schalkwyk")),
+title ="The SNPMaP package for R: A framework for genome-wide association using DNA pooling on microarrays",
+  journal =      "Bioinformatics",
+  volume =       "25",
+  year =         "2009", 
+  pages =        "281-283",
+  url =          "http://dx.doi.org/10.1093/bioinformatics/btn587",
+  textVersion = paste(
+ "Davis, O.S.P., Plomin, R., & Schalkwyk, L.C. (2009). The SNPMaP package for R: A framework for genome-wide association using DNA pooling on microarrays. Bioinformatics, 25, 281-283. doi:10.1093/bioinformatics/btn587")
+)

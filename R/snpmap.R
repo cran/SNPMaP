@@ -114,7 +114,7 @@
 	## Decide on workflow function long2*
 	if(normalize) object<-norm(object, tidy=TRUE)
 	if(log.intensities) object<-logIntensities(object, tidy=TRUE)
-	RUN<-switch(RUN, 'cel2long'=function(x){x}, 'cel2short'=long2short,
+	RUN<-switch(RUN, 'cel2long'=function(x, tidy){x}, 'cel2short'=long2short,
 			'cel2ras'=long2ras, 'cel2rasS'=long2rasS)
 	## Deal with the special 'set=0' (all sets)
 	if(set==0){
@@ -140,6 +140,7 @@
 		cat('Set ', snpmplist[[i]]@set, ':\n', sep='')
 		snpmplist[[i]]<-RUN(snpmplist[[i]], tidy=TRUE, ...)
 	}
+##	class(snpmplist) <- 'mSNPMaP'
 	return(snpmplist)
 }
 

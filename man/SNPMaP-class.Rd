@@ -83,10 +83,10 @@
 \usage{
 \S4method{as.matrix}{SNPMaP}(x, mm=FALSE, \dots)
 \S4method{plot}{SNPMaP,missing}(x, FUN=function(x){x}, xlim=c(loX, hiX), ylim=c(0, hiY), xlab="guess",
-                ylab="Density", main=x@table, col=rainbow(length(x@chps)),
+                ylab="Density", main="", col=rainbow(length(x@chps)),
                 legend.position="left", legend.bty="n", lty=1:length(x@chps),
                 zero.line=TRUE, \dots)
-\S4method{boxplot}{SNPMaP}(x, FUN=function(x){x}, ylab="guess", main=x@table, \dots)
+\S4method{boxplot}{SNPMaP}(x, FUN=function(x){x}, ylab="guess", main="", \dots)
 \S4method{image}{SNPMaP}(x, chips=x@chps, prompt=FALSE, FUN=log, col=grey(seq(0,1,0.01)), fastRender=4,
 				rows=x@celDim[1], cols=x@celDim[2], \dots)
 }

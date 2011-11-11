@@ -1,0 +1,17 @@
+# Export all public names (that do not begin with ".")
+exportPattern("^[^\\.]")
+
+# Import all packages listed as Imports or Depends
+import(
+  methods,
+  SNPMaP.cdm,
+  affxparser,
+  R.huge
+)
+importFrom(
+  R.utils,
+  ProgressBar,
+  reset,
+  increase
+)
+  
